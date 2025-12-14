@@ -1,4 +1,5 @@
 "use client";
+
 import { Sparkles } from "lucide-react";
 import Image from "next/image";
 
@@ -8,48 +9,72 @@ export default function StoriesOfHope() {
       name: "Sarah, 32",
       story:
         "After escaping domestic abuse, Sarah found emergency shelter, counselling and long-term support that helped her rebuild her life.",
-      image: "/images/story1.jpg",
+      image: "/images/beyond3.jpg",
     },
     {
       name: "Michael, 41",
       story:
         "Michael was sleeping rough for 2 years. Beyond Shelter helped him get housing, meals, and job placement support.",
-      image: "/images/story2.jpg",
+      image: "/images/beyond2.jpg",
     },
     {
       name: "Amara, 23",
       story:
         "As a young woman fleeing emotional and physical abuse, Amara found safety, legal support and a new beginning.",
-      image: "/images/story3.jpg",
+      image: "/images/beyond1.jpg",
     },
   ];
 
   return (
-    <section className="mt-14 mb-16">
-      <div className="flex items-center gap-2 mb-4">
+    <section className="mt-16 mb-20">
+
+      {/* HEADER */}
+      <div className="flex items-center gap-2 mb-3">
         <Sparkles size={22} className="text-shelterGreen" />
-        <h2 className="text-xl font-bold text-primaryBlue">Stories of Hope</h2>
+        <h2 className="text-2xl font-bold text-primaryBlue">
+          Stories of Hope
+        </h2>
       </div>
 
-      <p className="text-sm text-primaryBlue/80 mb-6">
-        Real stories from people we’ve supported across the UK.
+      <p className="text-primaryBlue/80 mb-8 max-w-2xl">
+        Real stories from people we’ve supported across the UK — proof that
+        compassion, shelter, and care can change lives.
       </p>
 
-      <div className="flex flex-col gap-6">
+      {/* STORIES GRID */}
+      <div
+        className="
+          grid gap-8
+          grid-cols-1
+          sm:grid-cols-2
+          lg:grid-cols-3
+        "
+      >
         {stories.map((person, index) => (
-          <div key={index} className="app-card overflow-hidden shadow-lg">
-            <div className="relative w-full h-48 rounded-3xl overflow-hidden">
+          <div
+            key={index}
+            className="app-card overflow-hidden hover:shadow-xl transition"
+          >
+            {/* IMAGE */}
+            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="/images/beyond2.jpg"
+                src={person.image}
                 alt={person.name}
                 fill
+                sizes="(max-width: 640px) 100vw,
+                       (max-width: 1024px) 50vw,
+                       33vw"
                 className="object-cover"
               />
             </div>
 
-            <div className="mt-4">
-              <h3 className="font-semibold text-primaryBlue">{person.name}</h3>
-              <p className="text-sm text-primaryBlue/80 mt-1 leading-relaxed">
+            {/* TEXT */}
+            <div className="mt-5">
+              <h3 className="text-lg font-semibold text-primaryBlue">
+                {person.name}
+              </h3>
+
+              <p className="mt-2 text-sm leading-relaxed text-primaryBlue/80">
                 {person.story}
               </p>
             </div>

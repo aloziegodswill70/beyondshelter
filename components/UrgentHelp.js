@@ -1,5 +1,11 @@
 "use client";
-import { PhoneCall, AlertTriangle, Home, Shield, ArrowRight } from "lucide-react";
+import {
+  PhoneCall,
+  AlertTriangle,
+  Home,
+  Shield,
+  ArrowRight,
+} from "lucide-react";
 
 export default function UrgentHelp() {
   const actions = [
@@ -30,33 +36,44 @@ export default function UrgentHelp() {
   ];
 
   return (
-    <section className="mt-14 mb-10">
-      <div className="bg-urgentRed text-white rounded-3xl p-6 shadow-xl">
-        <h2 className="text-2xl font-bold mb-2">Urgent Help</h2>
-        <p className="text-sm opacity-95 mb-4">
+    <section className="mt-14 mb-12">
+      {/* HEADER */}
+      <div className="bg-urgentRed text-white rounded-3xl p-6 md:p-8 shadow-xl">
+        <h2 className="text-2xl md:text-3xl font-bold mb-2">
+          Urgent Help
+        </h2>
+        <p className="text-sm md:text-base opacity-95 max-w-2xl">
           If you or someone else is in immediate danger or needs urgent housing,
           use one of the options below.
         </p>
       </div>
 
-      <div className="flex flex-col gap-4 mt-6">
+      {/* ACTION BUTTONS */}
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
         {actions.map((item, i) => (
           <button
             key={i}
-            className={`flex items-center justify-between p-5 rounded-3xl text-white shadow-md ${item.color}`}
+            className={`group flex items-center justify-between p-5 md:p-6 rounded-3xl text-white shadow-md transition hover:scale-[1.01] ${item.color}`}
           >
             <div className="flex items-center gap-4">
               <div className="bg-white/20 p-3 rounded-2xl">
                 {item.icon}
               </div>
 
-              <div>
-                <h3 className="text-lg font-bold">{item.title}</h3>
-                <p className="text-sm opacity-90">{item.desc}</p>
+              <div className="text-left">
+                <h3 className="text-base md:text-lg font-bold">
+                  {item.title}
+                </h3>
+                <p className="text-xs md:text-sm opacity-90">
+                  {item.desc}
+                </p>
               </div>
             </div>
 
-            <ArrowRight size={24} className="opacity-80" />
+            <ArrowRight
+              size={22}
+              className="opacity-80 group-hover:translate-x-1 transition"
+            />
           </button>
         ))}
       </div>

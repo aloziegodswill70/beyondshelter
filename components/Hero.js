@@ -1,44 +1,58 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="pt-28 pb-10 px-6 flex flex-col items-center text-center">
+    <section className="relative overflow-hidden rounded-3xl mb-10">
 
-      {/* MAIN HERO CARD */}
-      <div className="app-card w-full max-w-md">
+      {/* BACKGROUND IMAGE */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/beyond1.jpg"
+          fill
+          priority
+          alt="Beyond Shelter UK"
+          className="object-cover opacity-25"
+        />
+      </div>
 
-        {/* Hero Image */}
-        <div className="w-full mb-6">
-          <Image
-            src="/images/beyond1.jpg"
-            width={500}
-            height={380}
-            alt="Beyond Shelter UK"
-            className="rounded-2xl w-full h-auto"
-          />
-        </div>
+      {/* CONTENT */}
+      <div className="relative app-card backdrop-blur-sm bg-white/85">
 
-        {/* Text */}
-        <h2 className="text-3xl font-bold text-bs_navy">
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#1D3557]">
           Shelter. Safety. Support.
-        </h2>
+        </h1>
 
-        <p className="mt-4 text-bs_navy/70 leading-relaxed">
-          We provide emergency shelter, food, emotional support, and a path 
-          to safety for homeless individuals and abuse survivors in the UK.
+        <p className="mt-4 text-[#3A4F7A] leading-relaxed max-w-xl">
+          Beyond Shelter UK provides emergency housing, crisis care,
+          and long-term support for homeless individuals and abuse survivors.
         </p>
 
-        {/* CTA Buttons */}
-        <div className="mt-8 flex flex-col gap-4">
-          <button className="w-full py-3 bg-bs_orange text-white font-semibold rounded-full shadow hover:bg-orange-600 transition">
-            Get Help Now
-          </button>
+        {/* EMERGENCY ACTION BUTTONS */}
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
 
-          <button className="w-full py-3 bg-bs_blue text-white font-semibold rounded-full shadow hover:bg-blue-600 transition">
-            Support Our Work
-          </button>
+          <Link href="/need-help"
+            className="py-4 rounded-2xl bg-red-600 text-white font-semibold text-center shadow hover:opacity-90">
+            Get Quick Help
+          </Link>
+
+          <Link href="/refer-someone"
+            className="py-4 rounded-2xl bg-[#1D3557] text-white font-semibold text-center shadow hover:opacity-90">
+            Refer Someone in Need
+          </Link>
+
+          <Link href="/contacts"
+            className="py-4 rounded-2xl bg-[#457B9D] text-white font-semibold text-center shadow hover:opacity-90">
+            Enquiries
+          </Link>
+
+          <Link href="/emergency-helpline-in-uk"
+            className="py-4 rounded-2xl bg-[#2A9D8F] text-white font-semibold text-center shadow hover:opacity-90">
+            Emergency Helpline
+          </Link>
+
         </div>
       </div>
     </section>
