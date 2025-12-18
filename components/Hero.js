@@ -28,7 +28,7 @@ export default function Hero() {
         </h1>
 
         <p className="mt-5 text-center text-[#3A4F7A] leading-relaxed max-w-2xl mx-auto text-lg">
-          Beyond Shelter UK provides <strong>immediate emergency housing</strong>, 
+          Beyond Shelter provides <strong>immediate emergency housing</strong>, 
           crisis intervention, and urgent support for homeless individuals, abuse survivors,
           fathers in crisis, and people at risk.
         </p>

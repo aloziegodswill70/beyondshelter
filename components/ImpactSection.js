@@ -37,7 +37,7 @@ export default function ImpactSection() {
         </h2>
 
         <p className="text-sm md:text-base text-primaryBlue/80 mb-8 max-w-2xl">
-          Every day, Beyond Shelter helps people across the UK find safety,
+          Every day, Beyond Shelter helps people across all region find safety,
           support, and renewed hope.
         </p>
 

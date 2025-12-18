@@ -37,7 +37,7 @@ export default function StoriesOfHope() {
       </div>
 
       <p className="text-primaryBlue/80 mb-8 max-w-2xl">
-        Real stories from people we’ve supported across the UK — proof that
+        Real stories from people we’ve supported across regions — proof that
         compassion, shelter, and care can change lives.
       </p>
 
