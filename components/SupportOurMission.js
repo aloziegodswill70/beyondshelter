@@ -14,7 +14,7 @@ export default function SupportOurMission() {
 
       {/* DESCRIPTION */}
       <p className="text-sm sm:text-[15px] md:text-base text-[#3A4F7A] leading-relaxed">
-        Every day, thousands of people across the UK face homelessness, abuse,
+        Every day, thousands of people across the World face homelessness, abuse,
         and trauma alone. Your support helps us provide emergency shelter,
         safety, counselling, and long-term rehabilitation for vulnerable
         individuals who need hope the most.

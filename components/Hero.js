@@ -13,44 +13,76 @@ export default function Hero() {
           src="/images/beyond1.jpg"
           fill
           priority
-          alt="Beyond Shelter UK"
-          className="object-cover opacity-25"
+          alt="Emergency Shelter & Support UK"
+          className="object-cover opacity-30"
         />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       {/* CONTENT */}
-      <div className="relative app-card backdrop-blur-sm bg-white/85">
+      <div className="relative app-card backdrop-blur-sm bg-white/85 px-6 py-12">
 
-        <h1 className="text-3xl sm:text-4xl font-bold text-[#1D3557]">
-          Shelter. Safety. Support.
+        {/* BLINKING HERO TEXT */}
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-center text-[#1D3557] animate-pulse">
+          🚨 Emergency Shelter, Safety & Urgent Help 🚨
         </h1>
 
-        <p className="mt-4 text-[#3A4F7A] leading-relaxed max-w-xl">
-          Beyond Shelter UK provides emergency housing, crisis care,
-          and long-term support for homeless individuals and abuse survivors.
+        <p className="mt-5 text-center text-[#3A4F7A] leading-relaxed max-w-2xl mx-auto text-lg">
+          Beyond Shelter UK provides <strong>immediate emergency housing</strong>, 
+          crisis intervention, and urgent support for homeless individuals, abuse survivors,
+          fathers in crisis, and people at risk.
         </p>
 
         {/* EMERGENCY ACTION BUTTONS */}
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
-          <Link href="/need-help"
-            className="py-4 rounded-2xl bg-red-600 text-white font-semibold text-center shadow hover:opacity-90">
-            Get Quick Help
+          <Link
+            href="/need-help"
+            className="py-4 rounded-2xl text-white font-semibold text-center shadow 
+            animate-[pulse_2s_infinite] bg-red-600 hover:bg-red-700 transition"
+          >
+            Get Help Now
           </Link>
 
-          <Link href="/refer-someone"
-            className="py-4 rounded-2xl bg-[#1D3557] text-white font-semibold text-center shadow hover:opacity-90">
-            Refer Someone in Need
+          <Link
+            href="/emergency-help"
+            className="py-4 rounded-2xl text-white font-semibold text-center shadow 
+            animate-[pulse_2.5s_infinite] bg-orange-600 hover:bg-orange-700 transition"
+          >
+            Emergency Help
           </Link>
 
-          <Link href="/contacts"
-            className="py-4 rounded-2xl bg-[#457B9D] text-white font-semibold text-center shadow hover:opacity-90">
-            Enquiries
+          <Link
+            href="/emergency"
+            className="py-4 rounded-2xl text-white font-semibold text-center shadow 
+            animate-[pulse_3s_infinite] bg-emerald-600 hover:bg-emerald-700 transition"
+          >
+            Immediate Shelter
           </Link>
 
-          <Link href="/emergency-helpline-in-uk"
-            className="py-4 rounded-2xl bg-[#2A9D8F] text-white font-semibold text-center shadow hover:opacity-90">
-            Emergency Helpline
+          <Link
+            href="/fatherswhoneedhelp"
+            className="py-4 rounded-2xl text-white font-semibold text-center shadow 
+            animate-[pulse_2.8s_infinite] bg-indigo-600 hover:bg-indigo-700 transition"
+          >
+            Fathers Who Need Help
+          </Link>
+
+          <Link
+            href="/contacts"
+            className="py-4 rounded-2xl text-white font-semibold text-center shadow 
+            animate-[pulse_3.2s_infinite] bg-[#457B9D] hover:bg-[#35607A] transition"
+          >
+            Contact Support
+          </Link>
+
+          {/* ✅ LAST PAGE ADDED */}
+          <Link
+            href="/get-emergency-and-urgent-shelter-help"
+            className="py-4 rounded-2xl text-white font-bold text-center shadow-lg 
+            animate-[pulse_1.8s_infinite] bg-black hover:bg-gray-900 transition"
+          >
+            Read: Emergency & Urgent Shelter Help
           </Link>
 
         </div>

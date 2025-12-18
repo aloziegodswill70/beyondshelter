@@ -28,7 +28,7 @@ export default function ServicesPage() {
             </h2>
             <p className="text-gray-700 leading-relaxed">
               We connect vulnerable individuals with safe temporary housing and
-              emergency shelter options across the UK.
+              emergency shelter options across the Globe.
             </p>
           </div>
 
@@ -42,13 +42,15 @@ export default function ServicesPage() {
             </p>
           </div>
 
+          {/* ✅ REPLACED SERVICE */}
           <div className="p-6 border border-gray-200 rounded-2xl shadow-sm hover:shadow-lg transition">
             <h2 className="text-xl sm:text-2xl font-bold text-black mb-3">
-              Legal & Welfare Guidance
+              Fathers Who Need Help
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              We offer guidance on immigration matters, reporting abuse,
-              emergency housing laws, and welfare support options.
+              We provide confidential support for fathers facing homelessness,
+              family separation, emotional distress, financial hardship, or
+              crisis situations — ensuring no father is left without help.
             </p>
           </div>
 
@@ -57,7 +59,7 @@ export default function ServicesPage() {
               Community Outreach
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              We work closely with UK communities to support vulnerable residents
+              We work closely with communities to support vulnerable residents
               and deliver essential relief services.
             </p>
           </div>

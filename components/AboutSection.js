@@ -5,11 +5,11 @@ export default function AboutSection() {
     <section className="mt-12 app-card">
 
       <h2 className="text-2xl font-bold text-[#1D3557] mb-3">
-        About Beyond Shelter UK
+        About Beyond Shelter
       </h2>
 
       <p className="text-[15px] leading-relaxed text-[#3A4F7A]">
-        Beyond Shelter UK is a community-driven organisation dedicated to
+        Beyond Shelter is a community-driven organisation dedicated to
         protecting homeless and abused individuals across the United Kingdom.
         We provide safe housing, emergency care, and long-term guidance.
       </p>

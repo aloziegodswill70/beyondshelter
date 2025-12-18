@@ -62,7 +62,7 @@ export default function HomePage() {
 
           <p className="text-sm text-primaryBlue/80 mb-8">
             Learn more about our work, how to get help, and how you can support
-            Beyond Shelter UK.
+            Beyond Shelter.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -73,11 +73,11 @@ export default function HomePage() {
               className="app-card hover:shadow-xl transition block"
             >
               <h3 className="text-lg font-semibold text-primaryBlue mb-2">
-                What We Do at Beyond Shelter UK
+                What We Do at Beyond Shelter 
               </h3>
               <p className="text-sm text-primaryBlue/80">
                 Learn about our mission, services, and how we support vulnerable
-                individuals across the UK.
+                individuals across the Globe.
               </p>
             </Link>
 
@@ -87,7 +87,7 @@ export default function HomePage() {
               className="app-card hover:shadow-xl transition block"
             >
               <h3 className="text-lg font-semibold text-primaryBlue mb-2">
-                How to Get Emergency Help in the UK
+                How to Get Emergency Help 
               </h3>
               <p className="text-sm text-primaryBlue/80">
                 Step-by-step guidance on accessing shelter, crisis support,

@@ -6,19 +6,19 @@ import Image from "next/image";
 export default function StoriesOfHope() {
   const stories = [
     {
-      name: "Sarah, 32",
+      name: "Sarah, 12",
       story:
         "After escaping domestic abuse, Sarah found emergency shelter, counselling and long-term support that helped her rebuild her life.",
       image: "/images/beyond3.jpg",
     },
     {
-      name: "Michael, 41",
+      name: "Michael, 8",
       story:
         "Michael was sleeping rough for 2 years. Beyond Shelter helped him get housing, meals, and job placement support.",
       image: "/images/beyond2.jpg",
     },
     {
-      name: "Amara, 23",
+      name: "Amara, 10",
       story:
         "As a young woman fleeing emotional and physical abuse, Amara found safety, legal support and a new beginning.",
       image: "/images/beyond1.jpg",
