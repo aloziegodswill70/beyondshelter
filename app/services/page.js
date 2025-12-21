@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function ServicesPage() {
   return (
     <section className="min-h-screen bg-white text-gray-900">
@@ -21,46 +23,59 @@ export default function ServicesPage() {
 
         {/* ===== SERVICES GRID ===== */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {/* Service Card */}
+          {/* Emergency Accommodation */}
           <div className="p-6 border border-gray-200 rounded-2xl shadow-sm hover:shadow-lg transition">
             <h2 className="text-xl sm:text-2xl font-bold text-black mb-3">
               Emergency Accommodation
             </h2>
             <p className="text-gray-700 leading-relaxed">
               We connect vulnerable individuals with safe temporary housing and
-              emergency shelter options across the Globe.
+              emergency shelter options across the UK.
             </p>
           </div>
 
+          {/* Crisis Helpline */}
           <div className="p-6 border border-gray-200 rounded-2xl shadow-sm hover:shadow-lg transition">
             <h2 className="text-xl sm:text-2xl font-bold text-black mb-3">
               Crisis Helpline
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Access 24/7 phone support for domestic abuse, displacement,
-              exploitation, and urgent welfare issues.
+              Access urgent phone support for domestic abuse, displacement,
+              safeguarding concerns, and emergency welfare issues.
             </p>
           </div>
 
-          {/* ✅ REPLACED SERVICE */}
-          <div className="p-6 border border-gray-200 rounded-2xl shadow-sm hover:shadow-lg transition">
-            <h2 className="text-xl sm:text-2xl font-bold text-black mb-3">
-              Fathers Who Need Help
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              We provide confidential support for fathers facing homelessness,
-              family separation, emotional distress, financial hardship, or
-              crisis situations — ensuring no father is left without help.
-            </p>
+          {/* ✅ UPDATED: Fathers Who Need Help */}
+          <div className="p-6 border border-gray-200 rounded-2xl shadow-sm hover:shadow-lg transition flex flex-col justify-between">
+            <div>
+              <h2 className="text-xl sm:text-2xl font-bold text-black mb-3">
+                Fathers Who Need Help
+              </h2>
+              <p className="text-gray-700 leading-relaxed">
+                Emergency respite, temporary accommodation, and advocacy support
+                for fathers required to leave the family home due to safeguarding
+                or crisis situations. We provide non-judgmental, child-focused
+                support to help fathers navigate this difficult period safely
+                and fairly.
+              </p>
+            </div>
+
+            <Link
+              href="/fatherswhoneedhelp"
+              className="mt-4 inline-block text-sm font-semibold text-[#1D3557] hover:underline"
+            >
+              Learn more →
+            </Link>
           </div>
 
+          {/* Community Outreach */}
           <div className="p-6 border border-gray-200 rounded-2xl shadow-sm hover:shadow-lg transition">
             <h2 className="text-xl sm:text-2xl font-bold text-black mb-3">
               Community Outreach
             </h2>
             <p className="text-gray-700 leading-relaxed">
               We work closely with communities to support vulnerable residents
-              and deliver essential relief services.
+              and deliver essential relief, advocacy, and safeguarding services.
             </p>
           </div>
         </div>

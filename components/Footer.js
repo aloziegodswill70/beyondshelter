@@ -3,9 +3,9 @@
 import {
   Facebook,
   Instagram,
-  Twitter,
   Youtube,
-  Linkedin,
+  Mail,
+  MessageCircle,
 } from "lucide-react";
 
 import Link from "next/link";
@@ -49,7 +49,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* === LEGAL & INFO (NEW SECTION) === */}
+        {/* === LEGAL & INFO === */}
         <div>
           <h3 className="text-lg font-semibold mb-3">Legal & Info</h3>
           <ul className="space-y-2 text-sm text-white/80">
@@ -61,34 +61,46 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* === SOCIAL MEDIA === */}
+        {/* === CONTACT & SOCIAL === */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
 
           <div className="flex gap-4 mb-4">
-            <a href="https://facebook.com" aria-label="Facebook" className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition">
+            <a
+              href="https://facebook.com"
+              aria-label="Facebook"
+              className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition"
+            >
               <Facebook size={18} />
             </a>
 
-            <a href="https://instagram.com" aria-label="Instagram" className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition">
+            <a
+              href="https://www.instagram.com/shelterbeyond?igsh=bHZhZnp6eXdlajA4"
+              aria-label="Instagram"
+              className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition"
+            >
               <Instagram size={18} />
             </a>
 
-            <a href="https://tiktok.com" aria-label="TikTok" className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition">
-              <Youtube size={18} />
+            <a
+              href="https://wa.me/441332479423"
+              aria-label="WhatsApp"
+              className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition"
+            >
+              <MessageCircle size={18} />
             </a>
 
-            <a href="https://twitter.com" aria-label="Twitter/X" className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition">
-              <Twitter size={18} />
-            </a>
-
-            <a href="https://linkedin.com" aria-label="LinkedIn" className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition">
-              <Linkedin size={18} />
+            <a
+              href="mailto:info@beyondshelter.org.uk"
+              aria-label="Email"
+              className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition"
+            >
+              <Mail size={18} />
             </a>
           </div>
 
           <p className="text-xs text-white/70">
-            Follow us for updates, outreach stories, and emergency alerts.
+            Reach us via WhatsApp or email for urgent support and enquiries.
           </p>
         </div>
       </div>
